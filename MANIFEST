@@ -1,0 +1,15 @@
+Guardfile
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+bin/summon-file
+dist.ini
+lib/App/FileSummoner.pm
+lib/App/FileSummoner/CreateFile.pm
+lib/App/FileSummoner/Register.pm
+lib/App/FileSummoner/SkeletonDirsFinder.pm
+lib/App/FileSummoner/t/Register.t
+lib/App/FileSummoner/t/SkeletonDirsFinder.t
+t/00-load.t
