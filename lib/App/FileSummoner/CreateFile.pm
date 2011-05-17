@@ -1,4 +1,7 @@
 package App::FileSummoner::CreateFile;
+BEGIN {
+  $App::FileSummoner::CreateFile::VERSION = '0.002';
+}
 # TODO: rename to App::FileSummoner::Summoner
 
 use 5.006;
@@ -13,6 +16,7 @@ use File::Spec;
 
 use App::FileSummoner::SkeletonDirsFinder;
 use App::FileSummoner::Register qw(chooseSkeleton registerSkeleton);
+use App::FileSummoner::Register::Rules;
 
 =head1 NAME
 
@@ -45,7 +49,7 @@ sub summonFile {
         INTERPOLATE  => 1,
     );
 
-    my $skeleton = chooseSkeleton( $fileName )
+    my $skeleton = chooseSkeleton( File::Spec->rel2abs( $fileName ) )
       || die "Couldn't find suitable skeleton for " . $fileName;
     say "Skeleton: " . $skeleton;
     $template->process( $skeleton, {}, $fileName )
