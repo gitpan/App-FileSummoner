@@ -30,7 +30,7 @@ my %WriteMakefileArgs = (
     'Moose' => '0',
     'Template' => '0'
   },
-  'VERSION' => '0.002',
+  'VERSION' => '0.003',
   'test' => {
     'TESTS' => 't/*.t'
   }

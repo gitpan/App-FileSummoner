@@ -1,6 +1,6 @@
 package App::FileSummoner;
 BEGIN {
-  $App::FileSummoner::VERSION = '0.002';
+  $App::FileSummoner::VERSION = '0.003';
 }
 
 # ABSTRACT: Makes file creation easier!
@@ -31,9 +31,16 @@ sub run {
         exit;
     }
 
-    my ($fileToCreate) = @args;
     my $summoner = App::FileSummoner::CreateFile->new;
-    $summoner->summonFile($fileToCreate);
+
+    my $action = 'summonFile';
+    foreach my $arg (@args) {
+        if ($arg eq '-') {
+            $action = 'summonFileToStdout';
+            next;
+        }
+        $summoner->$action($arg);
+    }
 }
 
 =head1 AUTHOR
