@@ -1,6 +1,6 @@
 package App::FileSummoner::SkeletonDirsFinder;
 BEGIN {
-  $App::FileSummoner::SkeletonDirsFinder::VERSION = '0.003';
+  $App::FileSummoner::SkeletonDirsFinder::VERSION = '0.004';
 }
 
 use 5.006;

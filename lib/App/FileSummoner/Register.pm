@@ -1,6 +1,6 @@
 package App::FileSummoner::Register;
 BEGIN {
-  $App::FileSummoner::Register::VERSION = '0.003';
+  $App::FileSummoner::Register::VERSION = '0.004';
 }
 
 use 5.006;
@@ -47,6 +47,7 @@ Register new skeleton for a given rule. Use in I<rules.pl> file.
 sub registerSkeleton {
     my ( $rule, $skeleton ) = @_;
 
+    return if defined $skeleton{$rule};
     push @rules, $rule;
     $skeleton{$rule} = $skeleton;
 }

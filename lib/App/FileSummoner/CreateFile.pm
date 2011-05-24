@@ -1,6 +1,6 @@
 package App::FileSummoner::CreateFile;
 BEGIN {
-  $App::FileSummoner::CreateFile::VERSION = '0.003';
+  $App::FileSummoner::CreateFile::VERSION = '0.004';
 }
 
 use 5.006;
