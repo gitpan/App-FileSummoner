@@ -1,6 +1,6 @@
 package App::FileSummoner;
 BEGIN {
-  $App::FileSummoner::VERSION = '0.004';
+  $App::FileSummoner::VERSION = '0.005';
 }
 
 # ABSTRACT: Makes file creation easier!

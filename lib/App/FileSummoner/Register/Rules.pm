@@ -1,6 +1,6 @@
 package App::FileSummoner::Register::Rules;
 BEGIN {
-  $App::FileSummoner::Register::Rules::VERSION = '0.004';
+  $App::FileSummoner::Register::Rules::VERSION = '0.005';
 }
 
 use strict;

@@ -1,6 +1,6 @@
 package App::FileSummoner::Register;
 BEGIN {
-  $App::FileSummoner::Register::VERSION = '0.004';
+  $App::FileSummoner::Register::VERSION = '0.005';
 }
 
 use 5.006;
